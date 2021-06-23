@@ -40,13 +40,13 @@
 
                          <b>User Type</b>
 
-<select name="cars" id="cars">
-<b>Phone Number</b>
-  <option value="volvo">Admin</option>
-  <option value="saab">Customer</option>
-  <option value="mercedes">Accountant</option>
-  <option value="audi">Sales and Marketing Person</option>
-</select>
+                        <select name="cars" id="cars">
+                        <b>Phone Number</b>
+                        <option value="volvo">Admin</option>
+                        <option value="saab">Customer</option>
+                        <option value="mercedes">Accountant</option>
+                        <option value="audi">Sales and Marketing Person</option>
+                        </select>
 
                         <input type="submit" name="submit" value="Sign Up">
                         <a  href="/login">Sign In</a>
