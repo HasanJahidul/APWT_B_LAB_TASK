@@ -36,13 +36,17 @@
                         
                         <b>Confirm Password</b><br><input type="password" name="cpassword" ><br>
                         <!--pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Password and Confirm Password should be same" -->
-                         <b>Name</b> <br><input type="text" name="name" ><br>
+                        
 
-                            <legend><b>User typer</b></legend><hr>
+                         <b>User Type</b>
 
-                            <input type="radio" name="type" value="user"> <b>User</b>
-                            <input type="radio" name="type" value="admin"> <b>Admin</b>
-                            <hr>
+<select name="cars" id="cars">
+<b>Phone Number</b>
+  <option value="volvo">Admin</option>
+  <option value="saab">Customer</option>
+  <option value="mercedes">Accountant</option>
+  <option value="audi">Sales and Marketing Person</option>
+</select>
 
                         <input type="submit" name="submit" value="Sign Up">
                         <a  href="/login">Sign In</a>

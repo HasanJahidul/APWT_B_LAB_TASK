@@ -7,7 +7,8 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>abcd</h1>
+    <h1>Welcome {{session('user_name')}}</h1>
+    <h1>you are a {{session('user_type')}}</h1>
     <a  href="/logout">logout</a>
 </body>
 </html>
