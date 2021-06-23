@@ -21,6 +21,8 @@ class LoginController extends Controller
         if($status)
         {
             $req->session()->put('email', $req->email);
+            $user_name=$req->session()->put('user_name', $status->user_name);
+            $user_type=$req->session()->put('user_type', $status->user_type);
             return redirect("/home");
         }else{
             
