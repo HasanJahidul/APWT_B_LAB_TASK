@@ -16,9 +16,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/login', ['uses'=> 'LoginController@login']);
+Route::get('/login', ['uses'=> 'LoginController@login'])->name('login.index');
 Route::post('/login', ['uses'=> 'LoginController@verify']);
-Route::get('/register', ['uses'=> 'HomeController@register']);
+// Route::get('/register', ['uses'=> 'HomeController@register']);
+Route::get('/register', 'RegisterController@register')->name('register.index');
+Route::post('/register', 'RegisterController@insert')->name('register.insert');
 
 Route::get('/logout', ['uses'=> 'LogoutController@logout']);
 

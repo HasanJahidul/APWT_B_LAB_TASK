@@ -25,7 +25,7 @@ class UserRequest extends FormRequest
     {
         return [
                 'email'=> 'required|email|max:50',
-                'password'=> 'required|min:5|max:8|regex:/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).+$/'
+                'password'=> 'required|min:8|max:20|regex:/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).+$/'
         ];
     }
 }
